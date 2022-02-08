@@ -4,7 +4,7 @@ const button = document.querySelector("button");
 
 resultsContainer.innerHTML = "";
 
-button.onclick = function() {
+//button.onclick = function() {
 
     async function getApi() {
     
@@ -28,13 +28,13 @@ button.onclick = function() {
         }
 
       resultsContainer.innerHTML += `<div class="result">
-                                        <h3>Name: ${facts[i].name}</h3>
+                                        <h2>Name: ${facts[i].name}</h2>
                                         <p>Rating: ${facts[i].rating}</p>
-                                        <p>Tags: ${(facts[i].tags).length}</div>`
+                                        <p>Number of tags: ${(facts[i].tags).length}</div>`
     } 
 
 }
 
 getApi();
 
-}
+//}
