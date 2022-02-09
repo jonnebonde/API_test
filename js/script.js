@@ -47,13 +47,13 @@ const URL = corsUrl + gameUrl;
 const apiResult = document.querySelector("#apiResult");
 
 // This loader SVG is not mine. I have copied it from codepen. Link to the creator is located in the Readme file. 
-const loadingContainer = document.querySelector(".loading");
+/* const loadingContainer = document.querySelector(".loading");
 loadingContainer.innerHTML += `
     <h2>Your games is loading</h2>
     <svg viewBox="-2000 -1000 4000 2000">
     <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
     <use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use></svg>`;
-   
+    */
 
 setTimeout(() => {
   async function getGame() {
@@ -76,7 +76,7 @@ setTimeout(() => {
       const gameTags = gameObject[i].tags.length;
       const gameImage = gameObject[i].background_image; 
 
-      loadingContainer.innerHTML = "";
+      /* loadingContainer.innerHTML = ""; */
 
       apiResult.innerHTML += `
           <div class="game-card">
@@ -91,4 +91,4 @@ setTimeout(() => {
     }
   }
   getGame();
-}, 3000);
+}, 200);
