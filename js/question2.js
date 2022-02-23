@@ -1,10 +1,9 @@
-const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=f6dd075d81db416fbb289fc9d3726038";
+const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=69c560cd78c84554953747e1790c6b33";
 const resultsContainer = document.querySelector(".container");
-const button = document.querySelector("button");
+
 
 resultsContainer.innerHTML = "";
 
- button.onclick = function() { 
 
     async function getApi() {
     
@@ -23,7 +22,7 @@ resultsContainer.innerHTML = "";
         console.log(facts[i].rating)
         console.log(facts[i].tags)
 
-        if(i === 7) {
+        if(i === 8) {
             break;
         }
 
@@ -37,5 +36,5 @@ resultsContainer.innerHTML = "";
 
 getApi();
 
- } 
+  
 
