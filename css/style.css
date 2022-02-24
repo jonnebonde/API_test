@@ -41,6 +41,11 @@ h2 {
     
 } 
 
+img {
+  width: 300px;
+  height: 300px;
+}
+
 
 /* loading animation source: https://www.sliderrevolution.com/resources/css-loaders/ */
 
