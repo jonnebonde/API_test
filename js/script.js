@@ -1,4 +1,4 @@
-const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=69c560cd78c84554953747e1790c6b33";
+//const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=69c560cd78c84554953747e1790c6b33";
 const resultsContainer = document.querySelector(".container");
 const urlTest = "https://zoo-animal-api.herokuapp.com/animals/rand/10";
 
@@ -38,7 +38,7 @@ const corsTestUrl = corsFix + urlTest
 
         
          
-          resultsContainer.innerHTML += `<div class="result">
+          resultsContainer.innerHTML += `<div class="results>
                                             <h2>Name: ${facts[i].name}</h2>
                                             <p>Latin name: ${facts[i].latin_name}</p>
                                             <p>Id: ${(facts[i]).id}</p>
